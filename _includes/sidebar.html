@@ -1,0 +1,16 @@
+<aside>
+  <p class="intro">{{ site.subtitle }}</p>
+  <a class="skip-link visuallyhidden focusable" href="#main">Skip to Main Content</a>
+  <!-- page.path: {{ page.path }} -->
+  <nav class="sidebar-nav" role="navigation">
+    <ul>
+      {% for link in site.navigation %}
+        <!-- Link Path: {{ link.path }} -->
+        <li{% if page.path == link.path %} class="sidebar-nav-active"{% endif %}>
+          <!-- <a href="{{ site.baseurl }}{{ link.path }}.html" data-link-path="{{ link.path }}">{{ link.page }}</a> -->
+          <a href="{{ link.path }}.html" data-link-path="{{ link.path }}">{{ link.page }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</aside>

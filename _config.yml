@@ -1,0 +1,37 @@
+# Base configuration
+#permalink: /:title
+exclude: ["README.md"]
+#highlighter: rouge
+
+# Title
+name: Jefferson Street Strutters
+subtitle: Dixieland Jazz Band in Northern Virginia
+
+baseurl: '/'
+
+author:
+  name: Jefferson Street Strutters
+  url: https://jeffersonstreetstrutters.com
+
+# Style Variables
+brand_color: "#2cb34a"
+
+# Navigation
+# List links that should appear in the site sidebar here
+navigation:
+- page: "Welcome to the Jefferson Street Strutters Jazz Band"
+  path: index
+- page: "Meet the Players"
+  path: meet-the-players
+- page: "Events Calendar"
+  path: calendar
+- page: "Videos"
+  path: videos
+- page: "Photos"
+  path: photos
+- page: "Testimonials"
+  path: testimonials
+- page: "Sample Playlist"
+  path: playlist
+- page: "Contact & Booking"
+  path: contact
